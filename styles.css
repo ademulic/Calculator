@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.1s ease-in-out;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+main{
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 30px;
+    background-color: #2b2929;
+}
+main input{ 
+    border-radius: 5px;
+    padding: 2px;
+    background-color: black;
+    text-align: end;
+    font-size: 50px;
+    color: #00ffff;
+}
+main input::placeholder{
+   
+    color: #00ffff;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    gap: 5px;
+    height: 80%;
+}
+.buttons button{ 
+    background-color: #2b2929;
+    color: aqua;
+    border: 1px solid #1b1b1b;
+    font-size: 20px;
+}
+.buttons button:active{ 
+    background-color: #2b2929;
+    box-shadow: rgba(0, 255, 200, 0.35) 0px 5px 15px;
+    scale: 0.95;
+}
+#btn-plus{
+    grid-row-start: 2;
+    grid-row-end:4;
+    grid-column: 4;
+}
+#btn-enter{
+    grid-row-start:4;
+    grid-row-end:6;
+    grid-column: 4;
+}
+#btn-0{
+    grid-column: span 2;
+}
+main h1{
+    font-weight: 100;
+    text-align: center;
+    color: #00ffff;
+}
